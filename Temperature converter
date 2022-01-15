@@ -1,0 +1,24 @@
+let kelvin = 0;
+// today's forecast predicted by kelvin 293
+// celsius = (kelvin -= 273);
+// console.log(`Kelvin in Celsius = ` + Math.floor(celsius))
+// // this shows the calculation for celsius
+// let TEMPERATURE = celsius *(9/5) + 32
+// console.log(`Kelvin in Fahrenheit = ` + Math.floor(TEMPERATURE))
+// // this shows fahrenheit
+// let newton = celsius * (33/100)
+// console.log(`Newton in Newton = ` + Math.floor(newton))
+
+let celsius = (kelvin -= 273);
+celsius = Math.floor(celsius);
+console.log(`Kelvin in Celsius = ${celsius}`);
+
+// this shows the calculation for celsius
+let TEMPERATURE = celsius *(9 / 5) + 32;
+TEMPERATURE = Math.floor(TEMPERATURE);
+console.log(`Kelvin in Fahrenheit = ${TEMPERATURE}`);
+
+// this shows fahrenheit
+let newton = celsius * (33 / 100);
+newton = Math.floor(celsius);
+console.log(`Newton in Newton = ${celsius}`);
