@@ -1,0 +1,39 @@
+// function expressions
+const dog = function() {
+  return 'Woof!';
+}
+
+// function declarations
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+// arrow function if else statement
+const plantNeedsWater = (day) => {
+    if (day === 'Wednesday') {
+      return true;
+    } else {
+      return false;
+    }
+  };
+  console.log(plantNeedsWater)
+
+  // function if else
+  const plantNeedsWater = function(day){
+    if (day === 'Wednesday'){
+      return true
+    } else {
+      return false
+    }
+  };
+  
+  //ternary statement 
+  const waterCheck = plantNeedsWater('Tuesday')
+  console.log(waterCheck)
+
+  const plantNeedsWater = (day) => {
+    return day === 'Wednesday' ? true : false;
+  };
+
+  //consise arrow 
+  const plantNeedsWater = day => day === 'Wednesday' ? true : false;
