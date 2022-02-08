@@ -1,0 +1,32 @@
+const input = `hello friends`;
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+let resultArray = [];
+
+for (let inputIndex = 0; inputIndex < input.length; inputIndex++){
+  // console.log('inputIndex = ' + input[inputIndex]);
+  for(let vowel = 0; vowel < vowels.length; vowel++){
+    if (input[inputIndex] === vowels[vowel]){
+      if(input[inputIndex] === 'a'){
+        resultArray.push('aa');
+      }
+      else if (input[inputIndex] === 'e'){
+        resultArray.push('ee')
+      }
+      else if (input[inputIndex] === 'i'){
+        resultArray.push('ii')
+      }
+      else if (input[inputIndex] === 'o'){
+        resultArray.push('oo')        
+      }
+      else if (input[inputIndex] === 'u'){
+        resultArray.push('uu')
+      }
+      else {
+resultArray.push(input[inputIndex]);      
+      }
+    }
+  }
+}
+
+console.log('how humans talk: ' + input)
+console.log('how whales talk: ' + resultArray.join('').toUpperCase());
